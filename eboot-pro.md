@@ -20,6 +20,11 @@
 1. files/LE910C4-WWX_25.30.508_CUST_057_10_STR.bin.zip
 2. files/uxfp_1.14.5-0_source.zip
 
+```
+tar -xvzf uxfp-1.14.5-0.tar.gz
+date -s "2025-09-01 10:25:00"
+
+
 ```bash
 systemctl stop ModemManager
 uxfp -f LE910C4-WWX_25.30.508_CUST_057_10_STR.bin -p /dev/ttyUSB0
