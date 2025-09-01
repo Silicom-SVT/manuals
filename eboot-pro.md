@@ -20,9 +20,14 @@
 1. files/LE910C4-WWX_25.30.508_CUST_057_10_STR.bin.zip
 2. files/uxfp_1.14.5-0_source.zip
 
-```
+```bash
 tar -xvzf uxfp-1.14.5-0.tar.gz
 date -s "2025-09-01 10:25:00"
+./configure
+make
+make install
+cd /home/
+```
 
 
 ```bash
