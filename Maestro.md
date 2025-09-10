@@ -1,4 +1,6 @@
 
+**important:** must be on ADSL network
+
 ## Connect to eboot for serial connection
 Using terminal
 ```bash
