@@ -38,7 +38,7 @@ Password: superuser
    ```bash
    Console_LOM_Host.sh host
    ```
-2. 
+2. now can use back on host in serial connection
 ## IPPOWER:
 **relay 1**
 Link to website: http://192.168.0.215:5000/
