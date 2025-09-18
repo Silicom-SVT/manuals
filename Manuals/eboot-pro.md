@@ -61,3 +61,43 @@ libgpiod-event
 ```
 5. Switch OFF the main input AC and check that 3 pings were successfully sent
 6. Delete the scripts from the unit and load the origonal image
+
+## SystemCTL config
+```config
+# up and get ip  
+[Unit]  
+Description=Run udhcpc for ether0  
+After=network-pre.target  
+Wants=network-pre.target
+
+[Service]  
+Type=simple  
+ExecStart=/sbin/udhcpc -i ether0  
+Restart=on-failure
+
+[Install]  
+WantedBy=multi-user.target
+
+#allow from outside  
+[Unit]  
+Description=Restore iptables rules  
+After=network-pre.target udhcpc-ether0.service  
+Requires=udhcpc-ether0.service
+
+[Service]  
+Type=oneshot  
+ExecStartPre=/bin/sleep 30  
+ExecStart=/usr/sbin/iptables-restore /etc/iptables/rules.v4  
+RemainAfterExit=yes
+
+[Install]  
+WantedBy=multi-user.target  
+
+```
+
+```bash
+iptables -I INPUT 1 -p icmp --icmp-type echo-request -j ACCEPT  
+iptables -I INPUT 1 -m state --state RELATED,ESTABLISHED -j ACCEPT  
+iptables -I INPUT 2 -p tcp --dport 22 -j ACCEPT  
+iptables-save > /etc/iptables/rules.v4
+```
