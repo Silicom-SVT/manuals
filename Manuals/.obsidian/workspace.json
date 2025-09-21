@@ -11,14 +11,10 @@
             "id": "6888e437f148fcc1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "eboot-pro.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "eboot-pro"
+              "title": "New tab"
             }
           }
         ]
@@ -169,14 +165,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "6888e437f148fcc1",
+  "active": "8d9024b14214e757",
   "lastOpenFiles": [
-    "Broadcom.md",
-    "eboot-pro.md",
-    "grub.md",
-    "Welcome.md",
-    "2025-09-18.md",
+    "Systemctl.md",
     "README.md",
-    "Maestro.md"
+    "Maestro.md",
+    "grub.md",
+    "eboot-pro.md",
+    "Broadcom.md",
+    "Welcome.md",
+    "2025-09-18.md"
   ]
 }
