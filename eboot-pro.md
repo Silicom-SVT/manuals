@@ -57,6 +57,7 @@ mmcli -m 0 --simple-connect="apn=uinternet"
 ```
 4. type
 ```bash
+systemctl disable --now monitor-dying-gasp
 libgpiod-event
 ```
 5. Switch OFF the main input AC and check that 3 pings were successfully sent
