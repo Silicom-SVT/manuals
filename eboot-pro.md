@@ -99,3 +99,5 @@ systemctl daemon-reload
 systemctl enable eboot_ssh.service 
 reboot
 ```
+
+export LD_LIBRARY_PATH=/home/root/test/libgpiod.so.3:$LD_LIBRARY_PATH
