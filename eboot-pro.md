@@ -104,15 +104,20 @@ export LD_LIBRARY_PATH=/home/root/test/libgpiod.so.3:$LD_LIBRARY_PATH
 ```
 
 ## WatchDog
-```bash
-EBOOT WDT initialization.....Done
 
+
+```bash
+$ get_wdt_disable all
+wdt_disable #0: OFF
+```
+
+```bash
 $ set_port all off
 Setting Power port 'all' to OFF is OK.
-
+```
+```bash
 $ set_wdt_autoreset all off
 wdt_autoreset #0: OFF
-
 $
 ```
 
