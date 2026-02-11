@@ -107,9 +107,6 @@ export LD_LIBRARY_PATH=/home/root/test/libgpiod.so.3:$LD_LIBRARY_PATH
 ```bash
 EBOOT WDT initialization.....Done
 
-$ get_wdt_disable all
-wdt_disable #0: OFF
-
 $ set_port all off
 Setting Power port 'all' to OFF is OK.
 
